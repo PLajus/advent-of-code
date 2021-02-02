@@ -1,5 +1,11 @@
-my_file = open("D:\\Coding\\AdventofCode\\day3\\input.txt", "r")
+import os
+
+here = os.path.dirname(os.path.abspath(__file__))
+filename = os.path.join(here, 'input.txt')
+
+my_file = open(filename, "r")
 matrix = my_file.read().splitlines()
+my_file.close()
 
 def tree_count(right, down):
     trees = 0
