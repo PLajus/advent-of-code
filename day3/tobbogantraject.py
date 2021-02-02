@@ -16,3 +16,5 @@ def tree_count(right, down):
 
 #part 1
 print(tree_count(3, 1))
+#part 2
+print(tree_count(1,1)*tree_count(3,1)*tree_count(5,1)*tree_count(7,1)*tree_count(1,2))
